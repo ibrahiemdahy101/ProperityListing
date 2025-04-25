@@ -1,0 +1,24 @@
+
+.navbar-expand-lg .navbar-collapse{
+  justify-content: flex-end;
+}
+ul{
+  margin-right: 40px;
+}
+ul li a{
+    color:rgb(90, 89, 89);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.navbar{
+display: flex;
+justify-content: space-around;
+  background-color: rgb(230, 238, 247);
+}
+.navbar-brand{
+  background-color: transparent;
+}
+
+img{
+    width: 40px;
+    background:none;
+}

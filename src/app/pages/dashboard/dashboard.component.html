@@ -1,0 +1,61 @@
+<div class="wrapp">
+  <div class="addprop">
+    <button class="btn btn-secondary mb-5" (click)="openForm()">{{closeForm}}</button>
+    <form [formGroup]="form" (ngSubmit)="onSbmit()" *ngIf="isFormView">
+        <div class="mb-3">
+          <label for="cutId" class="form-label">ID</label>
+          <input type="number" class="form-control" formControlName="cutId" id="cutId" name="cutId" placeholder="Input cut id">
+      </div>
+    
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" formControlName="name" id="name" name="propID" placeholder="Example input placeholder">
+    </div>
+    
+    <div class="mb-3">
+      <label for="mobile" class="form-label">Mobile</label>
+      <input type="text" class="form-control" formControlName="mobile" id="mobile" name="mobile" placeholder="Enter Mobile Nu">
+    </div>
+    
+    <div class="mb-3">
+      <label for="email" class="form-label">Example label</label>
+      <input type="email" class="form-control" formControlName="email" id="formGroupExampleInput" name="email" placeholder="Enter email">
+    </div>
+    
+      <div class="mb-3">
+          <label for="address" class="form-label">Another label</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" formControlName="address" placeholder="Another input placeholder" name="address">
+          <button type="submit" class="btn btn-success mt-3">Add Prop</button>
+      </div>
+      </form>
+    </div>
+    
+    <div class="tbl">
+        <h3 class="mb-3 mt-5">Customers List</h3>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">CutName</th>
+                <th scope="col">CutName</th>
+                <th scope="col">CustAdress</th>
+                <th scope="col">CustMail</th>
+                <th scope="col">CustMobile</th>
+                <th scope="col">Delete</th>
+                <th scope="col">View</th>
+            </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr *ngFor="let customer of customerArr">
+                <th scope="row">{{customer.name}}</th>
+                <td>{{customer.address}}</td>
+                <td>{{customer.custId}}</td>
+                <td>{{customer.emailid}}</td>
+                <td>{{customer.mobile}}</td>
+    
+                <td><button class="btn" (click)="delet(customer.custId)">Delete</button></td>
+                <td><button class="btn "[routerLink]="['/customer/',customer.custId]">View</button></td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

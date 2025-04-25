@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="header mb-5 text-white p-2 ">
+    <button class="btn" (click)="toggle()">{{toglename}}</button>
+  </div>
+  <form (ngSubmit)="addsite()" class="row">
+        @if(isFormView()){
+            <div class="col-md-6">
+              <div class="form-group mb-3">
+                <label for="exampleInputEmail">City</label>
+                <input type="text" name="site city" [(ngModel)]="formobj.city" class="form-control" name="emailInput" id="exampleInputEmail" required>
+              </div>
+              <div class="form-group mb-3">
+                <label for="exampleInputPassword">date created</label>
+                <input type="text" class="form-control" id="exampleInputPassword" name="passwordInput" name="location" [(ngModel)]="formobj.totalProperties">
+              </div>
+              <div class="form-group mb-3">
+                <label for="text">lastupate</label>
+                <input class="form-control" type="text" [(ngModel)]="formobj.siteTitle" id="name" name="name">
+              </div>
+              <div class="form-group mb-3">
+                <label> location</label>
+                <input type="text" [(ngModel)]="formobj.location" class="form-control" name="maile">
+              </div>
+              <button type="submit" (click)="addsite()" class="btn mt-4 btn-success">Submit</button>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group mb-3">
+                <label for="exampleInputName">pincode</label>
+                <input type="text" [(ngModel)]="formobj.pincode" class="form-control" id="exampleInputName" placeholder="Name" name="nameInput">
+              </div>
+              <div class="form-group mb-3">
+                <label for="exampleInputBirthday">Birthday</label>
+                <input type="text" class="form-control" id="exampleInputBirthday" [(ngModel)]="formobj.propertyTypeId" name="birthdayInput">
+              </div>
+              <div class="form-group mb-3">
+                <label for="exampleMaidenName">Your Mother's Maiden Name</label>
+                <input type="text" [(ngModel)]="formobj.siteId" class="form-control" id="city" name="maidenNameInput">
+              </div>
+              <div class="form-group mb-3">
+                <label for="exampleMaidenName">sit ide</label>
+                <input type="text" [(ngModel)]="formobj.siteId" class="form-control" id="city" name="maidenNameInput">
+              </div>
+              <div class="form-group mb-3">
+                <label for="exampleMaidenName">Your Mother's Maiden Name</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="0" selected>All</option>
+                  <option *ngFor="let item of dataAry" [value]="item.propertTypeId">{{item.propertyType}}</option>
+                </select>
+              </div>
+          </div>
+           }
+  </form>
+  <h3 class="mb">Sites List</h3>
+  <table class="table caption-top mt-">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+        <th scope="col">PinCode</th>
+        <th scope="col">Date</th>
+        <th scope="col">delete</th>
+        <th scope="col">view</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let site of allSites">
+        <th scope="row">{{site.siteId}}</th>
+        <td>{{site.siteTitle}}</td>
+        <td>{{site.city}}</td>
+        <td>{{site.location}}</td>
+        <td>{{site.pincode}}</td>
+        <td>{{site.createdDate}}</td>
+        <td><button class="btn btn-secondary" (click)="deletsite(site.siteId)">Delete</button></td>
+        <td><button class="btn btn-secondary" [routerLink]="['/site/',site.siteId]">View</button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

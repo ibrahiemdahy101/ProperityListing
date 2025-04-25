@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(120, 120, 120);
+}
+.table .btn{
+background-color: rgb(228, 228, 228);
+color: black;
+border: none;
+}
+.header .btn{
+    border-radius: 20px;
+    background-color: rgb(223, 223, 223);
+    border: none;
+    color:black;
+}
+.row input{
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.caption{
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 25px;
+}
+.form-select{
+    border: 2px solid black;
+    margin-top: 20px;
+}

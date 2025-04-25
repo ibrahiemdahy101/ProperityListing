@@ -1,0 +1,72 @@
+{
+  "AllPropType": {
+    "message": "",
+    "result": true,
+    "data": [
+      {
+        "propertTypeId": 1312,
+        "propertyType": "2RK FLAT"
+      },
+      {
+        "propertTypeId": 1311,
+        "propertyType": "1BHK FLAT"
+      },
+      {
+        "propertTypeId": 1310,
+        "propertyType": "1RK FLAT"
+      },
+      {
+        "propertTypeId": 1303,
+        "propertyType": "2BHK FLAT"
+      }
+    ]
+  },
+  "prop": [
+    {
+      "propertTypeId": 1312,
+      "propertyType": "2RK FLAT",
+      "id": "c042"
+    },
+    {
+      "id": "bc6b",
+      "propID": 0,
+      "proptype": "g"
+    },
+    {
+      "id": "ecca",
+      "propID": 0,
+      "proptype": "g"
+    },
+    {
+      "id": "137d",
+      "propID": 0,
+      "proptype": "g"
+    }
+  ],
+"sites":[
+  {
+    "siteId": 183,
+    "siteTitle": "Jaguar",
+    "location": "Manikonda",
+    "propertyTypeId": 1310,
+    "city": "Hyde",
+    "pincode": "500098",
+    "state": "Hyd",
+    "totalProperties": 1,
+    "createdDate": "2024-12-06T05:28:55.897",
+    "lastUpdatedDate": "2024-12-06T05:28:55.897"
+  },
+  {
+    "siteId": 187,
+    "siteTitle": "LAnd Cruiser",
+    "location": "Hyderabd",
+    "propertyTypeId": 1311,
+    "city": "East Bae",
+    "pincode": "09900",
+    "state": "Hyd",
+    "totalProperties": 4,
+    "createdDate": "2024-12-06T05:27:07.93",
+    "lastUpdatedDate": "2024-12-06T05:27:07.93"
+  }
+]
+}

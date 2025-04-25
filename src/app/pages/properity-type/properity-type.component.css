@@ -1,0 +1,19 @@
+.propwrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.form-control{
+    border-color: black;
+}
+.addprop button{
+margin-right: 20px;
+}
+h3{
+    background-color: rgb(73, 70, 70);
+    color:white;
+    padding: 10px;
+    border-radius: 20px;
+}

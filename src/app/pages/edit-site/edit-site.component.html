@@ -1,0 +1,57 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="row">
+        <div class="col-md-6">
+          <div class="form-group mb-3">
+            <label for="exampleInputEmail">Site id</label>
+            <input type="number" name="siteid" formControlName="siteid" class="form-control" id="sitid">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="exampleInputPassword">site title</label>
+            <input type="text" class="form-control" id="exampleInputPassword" formControlName="sitetitle" id="sitetitle" name="site title">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="text">location</label>
+            <input class="form-control" formControlName="location" type="text" id="location" name="location">
+          </div>
+
+          <div class="form-group mb-3">
+            <label> proptypid</label>
+            <input type="number" formControlName="proptypeid" class="form-control" name="proptypid" id="proptypeid">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="exampleMaidenName">last update date</label>
+            <input type="text" class="form-control" id="lastDate" name="lastDate" formControlName="lastDate">
+          </div>
+
+          <button type="submit" class="btn mt-4 btn-success">Submit</button>
+      </div>
+
+      <div class="col-md-6" >
+          <div class="mb-3">
+            <label for="exampleInputName">city</label>
+            <input type="text" class="form-control" id="city" formControlName="city"  name="city">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="exampleInputBirthday">pincode</label>
+            <input type="text" class="form-control" id="pincode" formControlName="pincode" name="pincode">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="exampleMaidenName">state</label>
+            <input type="text" class="form-control" id="state" formControlName="state" name="state">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="exampleMaidenName">total props</label>
+            <input type="text" class="form-control" id="totalprops" name="totalprops" formControlName="totalprops">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="exampleMaidenName">creatDate</label>
+            <input type="text" class="form-control" id="creatdate"  name="creatDate" formControlName="creatDate">
+          </div>
+      </div>
+</form>

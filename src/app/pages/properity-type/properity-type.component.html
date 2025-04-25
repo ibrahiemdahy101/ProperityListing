@@ -1,0 +1,40 @@
+<div class="propwrap">
+    <div class="tbl">
+        <h3 class="mb-4">Properity Details</h3>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">PropID</th>
+                <th scope="col">PropType</th>
+                <th scope="col">Actions</th>
+                <th scope="col">View</th>
+                <th scope="col">Edite</th>
+            </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr *ngFor="let prop of gridData">
+                <th scope="row">{{prop.propertTypeId}}</th>
+                <td>{{prop.propertyType}}</td>
+                <td><button class="btn btn-danger" (click)="deletData(prop.propertTypeId)">Delete</button></td>
+                <td><button class="btn btn-secondary">View Prop</button></td>
+                <td><button class="btn btn-success" (click)="updatData(prop)">Edit Prop</button></td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="addprop">
+      <h3 class="mb-4">Add Properity</h3>
+      <form [formGroup]="form">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Example label</label>
+          <input type="text" class="form-control" formControlName="propertTypeId" id="formGroupExampleInput" name="propID" placeholder="Example input placeholder">
+      </div>
+      <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Another label</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" formControlName="propertyType" placeholder="Another input placeholder">
+          <button class="btn btn-success mt-3" (click)="save()">Add Prop</button>
+          <button class="btn btn-success mt-3" (click)="loaddat()">Updat Prop</button>
+      </div>
+      </form>
+    </div>
+</div>

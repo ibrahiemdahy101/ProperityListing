@@ -1,0 +1,29 @@
+
+
+<div class="layout d-flex">
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <li class="sidebar-brand">
+                <img class="g" src="..//public/assets/images.png"alt="">
+                Start Bootstrap
+            </li>
+            <ul class="sidebar-nav">
+                <li>
+                    <a routerLink="dashboard" routerLinkActive="active">Customers</a>
+                </li>
+                <li>
+                    <a class="last" routerLink="site-master" routerLinkActive="active">Sites</a>
+                </li>
+                <li>
+                    <a routerLink="properityType" routerLinkActive="active">ProperityType</a>
+                </li>
+                <li>
+                    <a class="last" routerLink="PropMaster" routerLinkActive="active">Properities Master</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="child">
+    <router-outlet></router-outlet>
+    </div>
+</div>

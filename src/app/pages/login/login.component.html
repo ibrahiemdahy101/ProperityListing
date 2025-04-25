@@ -1,0 +1,14 @@
+<div class="addprop">
+    <h3 class="mb-4">Sign in</h3>
+    <form [formGroup]="LogForm" (ngSubmit)="onSbmit()">
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Example label</label>
+        <input type="text" class="form-control" formControlName="email" id="formGroupExampleInput" name="propID" placeholder="Example input placeholder">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Another label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" formControlName="password" placeholder="Another input placeholder">
+        <button class="btn btn-success mt-3">Submit</button>
+    </div>
+    </form>
+  </div>

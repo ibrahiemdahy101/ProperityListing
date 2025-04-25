@@ -1,0 +1,33 @@
+<div class="tbl">
+    <h3 class="mb-4">Properity Masters List</h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">CutName</th>
+            <th scope="col">CutName</th>
+            <th scope="col">CustAdress</th>
+            <th scope="col">CustMail</th>
+            <th scope="col">CustMobile</th>
+            <th scope="col">Delete</th>
+            <th scope="col">View</th>
+            <th scope="col">Edit</th>
+        </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr *ngFor="let master of allMaserProp">
+            <th scope="row">{{master.city}}</th>
+            <td>{{master.createdDate}}</td>
+            <td>{{master.facing}}</td>
+            <td>{{master.lastUpdatedDate}}</td>
+            <td>{{master.location}}</td>
+            <td>{{master.pincode}}</td>
+            <td>{{master.propertyId}}</td>
+
+
+            <td><button class="btn btn-secondary">Delete</button></td>
+            <td><button class="btn btn-secondary">View</button></td>
+            <td><button class="btn btn-secondary">Edit</button></td>
+          </tr>
+        </tbody>
+    </table>
+</div>
